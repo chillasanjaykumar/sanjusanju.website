@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+     
+    <title>rock paper scissor</title>
+</head>
+<body>
+    <p>rock paper scissor</p>
+    <button onclick="
+    const variable=Math.random();
+    let commove='';
+    if(variable >=0 && variable < 1/3){
+         commove='rock';
+    }
+    else if(variable >= 1/3 && variable <  2/3){
+        commove='paper';
+    }else if(variable >=2/3 && variable <1){
+        commove='scissor';
+    }
+    console.log(commove);
+    let result='';
+    if(commove === 'rock'){
+        result='tie';
+    }
+    else if(commove === 'paper' ){
+         result='lose';
+
+    }
+    else if( commove === 'scissor'){
+        result='win';
+    }
+     alert(`you picked rock computer picked ${commove}.you ${result}`);
+    ">Rock
+    </button>
+
+    <button onclick="
+    const v=Math.random();
+    let computermove='';
+    if(v >=0 && v < 1/3){
+        computermove='paper';
+     }
+     else if(v >=1/3 && v<2/3){
+        computermove='rock';
+     }
+    else if(v >=2/3 && v < 1){
+        computermove='scissor';
+    }
+    console.log(computermove);
+    let r='';
+    if(computermove === 'paper'){
+         r='tie';
+     }
+     else if(computermove === 'rock')
+     {
+        r='win';
+     }
+     else if(computermove === 'scissor'){
+        r='lose';
+     }
+     alert(`you picked paper. computer picked ${computermove} .you ${r}`);
+    ">
+    Paper
+   </button>
+
+    <button onclick="
+    const v=Math.random();
+    let computermove='';
+    if(v >=0 && v < 1/3){
+        computermove='paper';
+     }
+     else if(v >=1/3 && v<2/3){
+        computermove='rock';
+     }
+    else if(v >=2/3 && v < 1){
+        computermove='scissor';
+    }
+    console.log(computermove);
+    let r='';
+    if(computermove === 'paper'){
+         r='win';
+     }
+     else if(computermove === 'rock')
+     {
+        r='lose';
+     }
+     else if(computermove === 'scissor'){
+        r='tie';
+     }
+     alert(`you picked scissor. computer picked ${computermove} .you ${r}`);
+    ">
+    Scissors</button>
+</body>
+</html>
